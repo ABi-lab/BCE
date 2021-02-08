@@ -1,0 +1,113 @@
+html, body { width: 100%; height: 100%; margin: 0px; padding: 0px; }
+body { background: #000; color: #ddd; }
+a { cursor: pointer; color: white; font-weight: bold; }
+a:hover { cursor: pointer; }
+
+#dialogs { display: none; }
+#dialogs * { font-size: 10px; }
+
+#toolbar { Xheight: 74px; }
+#toolbar select, .tabs,
+#editor, #toolbar,
+#toolbar select option 
+{ background: transparent; color: white; }
+#toolbar select option 
+{ background: black; }
+
+#editor .ace_editor,
+#editor textarea { width: 100%; height: 100%; padding: 0; margin: 0; background: transparent; }
+/* this will avoid the flicker on load, but also removes preview on slow load and failsafe textarea if editor doesn't load */
+#editor textarea { opacity: 0.5; xdisplay: none; font-size: 10px; }
+#editor textarea:before { font-size: 20px; content: 'Loading file...' !important; display: block; }
+#editor .ace_content { height: 100%; }
+#editor pre { border: none 0; }
+#editor * { font-family: inherit; }
+
+#explorer { background-color: transparent !important; overflow: hidden !important; }
+#explorers { height: 80vh; border: 0; padding: 0; margin: 0; }
+#explorers .explorer { padding: 5px !important; }
+#explorers .explorer ul { margin: 0; height: 108%; overflow: auto; overflow-x: auto; }
+#explorers .explorer li { padding: 1px; border: none 0; white-space: nowrap; overflow: visible; }
+#explorers .explorer li:hover { background: #444 !important; }
+#explorers .explorer li a { white-space: nowrap; }
+#explorers .explorer li a:hover { text-decoration: underline; } 
+
+.dropdown-menu { margin-top: 40px; }
+.dropdown a i { float: right; margin-top: 3px; }
+#editorPanel { height: 100vh; }
+#editorPanel .btn-toolbar .dropdown .btn { float: none; }
+#editorPanel .btn-toolbar label { color: #333; font-weight: normal; }
+
+.notimplemented { opacity: 0.5; }
+.btn-toolbar, .btn-toolbar>.btn-group { Xheight: 37px; }
+.btn-group>select, .btn-toolbar>.search { height: 100%; color: black; }
+.search { width: calc(100% - 164px); }
+
+/* UL */
+.tabs { font-weight: bold; border: none 0; border-bottom: solid 1px white; border-radius: 0; padding: 0; font-size: 0.7em; }
+/* LI */
+.ui-tabs-nav li { cursor: pointer; }
+.ui-tabs-nav .ui-state-default, .ui-sortable-placeholder:before,
+.btn-default {
+    background: #444;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 75%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 75%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fffff', endColorstr='#00ffffff',GradientType=0 );
+    /*
+    border: 1px solid #fff; font-weight: normal; color: #FFF; white-space: nowrap;
+    */
+}
+.ui-tabs-nav .ui-state-active, .ui-tabs-nav .ui-state-hover 
+{ background: #111; }
+/* A */
+.ui-tabs-nav a.ui-tabs-anchor { padding: 4px 1.5ex 3px !important; outline:0; border:none; -moz-outline-style: none; color: #ccc; font-weight: normal; }
+/* close tab */
+.ui-tabs-nav .close { color: #fff !important; font-family: inherit; opacity: 1; text-shadow: none; font-size: 0.8em; margin: 0.7em 0.7em 0 -0.1em; }
+.ui-tabs-nav .close:hover { color: #f00 !important; }
+.ui-tabs-nav .close:before { font-family: 'Glyphicons Halflings'; }
+.ui-tabs-nav li.edited a { color: #f00; font-weight: bold; }
+.ui-tabs-nav li.edited a:before { content: '*'; }
+.ui-tabs-nav li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+.ui-tabs-panel { padding: 0 !important; }
+.ui-tabs-nav .ui-state-default {}
+.ui-tabs-nav .ui-state-active a { text-shadow: 0px 0px 5px #fff; color: #fff; }
+.ui-tabs .ui-tabs-nav li {margin: 0;width: initial !important;}
+.ui-corner-top { border-radius: 5px; border-radius: 15px; }
+.ui-corner-top { border-top-left-radius: 5px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; }
+
+.ui-sortable-helper { opacity: 0.5; }
+.ui-sortable-placeholder { visibility: visible !important; }
+.ui-sortable-placeholder:before { content: ' '; height: 100%; display: inline-block; width: 40px; }
+
+#explorers .explorer { font-size: 0.7em; }
+.list-group-item { background: transparent; color: white; }
+.list-group-item a { font-weight: normal; }
+
+.ui-layout-resizer, .ui-layout-toggler { background-color: #333 !important; }
+.ui-layout-pane, .ui-layout-toggler { border: none 0 !important; padding: 0 !important; }
+.ui-layout-toggler { background-color: #444 !important; }
+#editorPanel .ui-widget-content { background: black !important; color: white !important; }
+
+#dlgBrowseNewPath { font-weight: bold; }
+
+#statusBar { margin: 0; padding: 3px !important; height: auto !important; background-color: #222 !important; color: gray; }
+.statusBar { margin: 0; padding: 3px !important; height: auto !important; background-color: #222 !important; color: gray; }
+
+.ace_status-indicator { color: gray; position: absolute; right: 0; border-left: 1px solid; font-size: 13px; }
+.ace_search button { color: #000; }
+.ace_search .ace_searchbtn { font-size: 8px; }
+
+#explorer { overflow: initial; }
+.explorer { }
+.explorer ul { overflow-x: scroll;}
+
+X.btn-file { position: relative; overflow: hidden; }
+X.btn-file input[type=file] { position: absolute; top: 0; right: 0; min-width: 100%;
+    min-height: 100%; font-size: 100px; text-align: right; filter: alpha(opacity=0);
+    opacity: 0; outline: none; background: white; cursor: inherit; display: block;
+}
+
+
+
+

@@ -1,0 +1,4 @@
+[20-Apr-2017 14:02:51 America/Denver] PHP Notice:  Use of undefined constant STDIN - assumed 'STDIN' in /home1/abilabne/public_html/lib/3rd/ace/demo/kitchen-sink/docs/php.php on line 13
+[20-Apr-2017 14:02:51 America/Denver] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home1/abilabne/public_html/lib/3rd/ace/demo/kitchen-sink/docs/php.php on line 13
+[21-Apr-2017 08:36:11 America/Denver] PHP Notice:  Use of undefined constant STDIN - assumed 'STDIN' in /home1/abilabne/public_html/lib/3rd/ace/demo/kitchen-sink/docs/php.php on line 13
+[21-Apr-2017 08:36:11 America/Denver] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home1/abilabne/public_html/lib/3rd/ace/demo/kitchen-sink/docs/php.php on line 13
