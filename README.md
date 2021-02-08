@@ -15,12 +15,13 @@ It was developed while being used to work on code for HTML, CSS, JavaScript, PHP
 Just copy the whole contents of this directory to a folder accessible through HTTP via PHP-enabled web server and access it through the browser. 
 
 **It is recommended that you somehow protect this folder from public access by any method available.** 
-_I use .htaccess with .htpasswd on Apache._
+
+_On Apache web server I use .htaccess with .htpasswd files to allow access to certain username/password combinations only._
 
 This is mostly what it looks like:  
 ![Screenshot: main screen with two file browser tabs and three file tabs open, one changed but not saved](/.github/screenshot.jpg)
 
-You will se a resizable **file browser tab** on the left with the content of the editor's parent folder on the web server. If you hover over icons above and read what each one does, you will find the one whith which you can **add more file-browser-tabs** (for different projects maybe), or the one with which you can **create new files and folders** on the server. Plus sign will expand a subfolder while clicking on a file will attempt to **open it in a code editor tab** within the current window. 
+You will see a resizable **file browser tab** on the left with the content of the editor's parent folder on the web server. If you hover over icons above and read what each one does, you will find the one whith which you can **add more file-browser-tabs** (for different projects maybe), or the one with which you can **create new files and folders** on the server. Plus sign will expand a subfolder while clicking on a file will attempt to **open it in a code editor tab** within the current window. 
 
 Feel free to explore other buttons as well. You can **open current file in a new tab**, or **fold the code** to make it more easily readable. There are also some keyboard shortcuts hidden throughout the app. The most usefull of them all is probably **Ctrl+S** which will **Save** the current file, and standard **copypasting shortcuts** should also work. You can **find more by hovering** over buttons - if there is a shortcut for it, it will most likely be shown there.
 
@@ -40,7 +41,7 @@ That being said, I've thought (but not yet done much else) about implementing th
 # Other notes
 - I've never used this editor on anything other than Unicode (UTF) encoded files. If you create a new file from the editor, the appropriate encoding will be used. If you encounter any problems with other files, change encoding to UTF.
 - I like dark mode. I like it so much that at some point I've made the whole editor dark, which interfeers with light editor themes. This is a known bug, but I don't use light mode enough to care. Maybe later, or maybe someone else will make it work.
-- During the development this was hosted at shared hosting site on a server shared with many other clients. It was regularly updated with the latest security features, some of which work against the functionalities of this application, like exposing access to arbitrary files on server or transferring full paths and any file content, including unsafe content as a feature. For this reason, some work-arounds have been implemented, like changing '.' and '/' symbols with others, and Base64 encoding/decoding content (even twice! and then slightly un/scrambling even that!) before transfer. This is **JUST a TEXT editor**.
+- During the development this was hosted at shared hosting site on a server shared with many other clients. It was regularly updated with the latest security features, some of which work against the functionalities of this application, like exposing access to arbitrary files on server or transferring full paths and any file content, including unsafe content as a feature. For this reason, some work-arounds have been implemented, like changing '.' and '/' symbols with others, and Base64 encoding/decoding content (even twice! and then slightly un/scrambling even that!) before transfer. This is **JUST a TEXT editor**. As such it does not work with binary file types at the moment, but this does not mean binary transfers can't be implemented for particular cases at some point in the future.
 
 # Again
 **- BE WARNED THAT THIS CODE, particularly index.php file, pose a SERIOUS SECURITY RISK and may expose unintended/unknown/undesired contents of the server to the user.**
@@ -57,16 +58,16 @@ No, I could not have done all this all by myself. I stand on the shoulders of th
 - ACE editor
 
 # Project structure
-- index.php (main API/PHP code file for serving and saving content)
-- app/app.php (HTML and UI)
-- app/app.js (JavaScript)
-- app/app.css (CSS)
-- backups (folder for saving backup files)
-- lib (the shoulders of the giants, third party code)
-- lib/ace (ACE editor)
-- lib/fonts (FontAwesome, bootstrap)
-- lib/js (RequireJS, jQuery, jQueryUI, Bootstrap)
-- lib/css (jQueryUI, Bootstrap, FontAwesome)
+- **index.php** (main API/PHP code file for serving and saving content)
+- **app/app.php** (HTML and UI)
+- **---/app.js** (JavaScript)
+- **---/app.css** (CSS)
+- **backups** (folder for saving backup files)
+- **lib** (the shoulders of the giants, third party code)
+- **---/ace** (ACE editor)
+- **---/fonts** (FontAwesome, bootstrap)
+- **---/js** (RequireJS, jQuery, jQueryUI, Bootstrap)
+- **---/css** (jQueryUI, Bootstrap, FontAwesome)
 
 # Disclaimer
 If there is anything or anyone I forgot to do or mention, let me know.
