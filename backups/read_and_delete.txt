@@ -1,0 +1,5 @@
+The sole puspose why this file exists is because "backups" is a required folder. Every time a file is saved, it is also written here as a backup. Just in case, you know. Because of Mr. Murphy. There is a whole internet between your file in your browser and the server where it needs to be saved and while things most often DON'T, many CAN go wrong and result in the content being corrupted at transfer. Better safe than sorry. 
+
+While there is no need for any files to exist here before the software is even installed, the folder itself needs to exist at runtime. But, because git does not allow committing empty folders in a simple enough way (at least not that i'd know of at the moment), that is why this file is here: so that the backup folder itself can survive through the versioning process.
+
+You can delete this file at any time. It is also recommended you empty this folder every now and then. You can also do it from BSE Settings page. If you're looking here because your disk is full, this may be the right time. And thank you for using the editor so much ;)
