@@ -1,5 +1,4 @@
-# BCE
-Browser Code Editor
+# BCE: Browser Code Editor
 
 # About
 As the name implies, this software allows you to browse and edit plain text files on your server from the comfort of your browser.
