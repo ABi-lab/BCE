@@ -1,0 +1,40 @@
+# ToDo (full):
+- [ ] upload a file
+- [ ] if the file is zip, checkbox to extract it upon upload
+- [ ] if extracted upon upload, checkbox to delete zip after extraction
+- [ ] support light themes
+- [ ] fix colors in the preferences window (they're kind of hard to navigate now, though not impossible)
+- [ ] there is a longer list at settings > help and notes, but some features listed there have already been implemented and it needs some cleaning. this being said, they are also listed here and can be removed from there:
+
+- [ ] beautify command, extend php to js/css/c#/.../?
+- [ ] enable and configuration of code snippets
+- [ ] split view
+- [x] find and replace (also in files and folders)
+- [x] fix: on file open resize editor to fit window (resizing window seems to help)
+- [ ] Ctrl(+Shift)+Tab cycles open files
+- [ ] list of recently opened files (up to gazillion) with click to open option
+- [ ] and do the folders as well since you're just at it and simply because you can ;)
+- [ ] each file in explorer is dropdown button; click opens it by default, like now, but there are options:
+- [ ] These could also go to file toolbar
+- [x] Download
+- [ ] Open in browser in new tab via proxy
+- [x] Open in browser (new tab, without editor)
+- [ ] End These
+- [ ] Copy to clipboard (copies file path which is just a variable) - on file delete should check this
+- [ ] copy this file/folder to another location
+- [ ] folders should have "open new explorer tab from here"
+- [ ] folders should also have create folder
+- [ ] upload into folders
+- [ ] copy files in explorer by drag and drop, move with shift or ctrl
+- [ ] upload file into folder on drag and drop from outside browser
+- [ ] download folder and subfolders as zip
+- [ ] rename file/folder
+- [ ] close all files
+- [ ] close others, to the left/right
+- [ ] upload zip/tar/etc to folder and extract
+- [ ] new file templates (html, xml, rss, css, bootstrap/jquery, ...)
+- [ ] file and folder icons to explorer
+- [ ] reload file
+- [ ] on file tab activate (reload and) check if remote file was meanwhile changed
+- [ ] reload all files every 5 minues or so (setting?) to check for remote changes by other users
+- [ ] find more monospaced fonts
