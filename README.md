@@ -17,7 +17,7 @@ Just copy the whole contents of this directory to a folder accessible through HT
 
 You will se a file browser tab on the left with the content of the editor's parent folder on the web server. If you hover over icons above and read what each one does, you will find the one whith which you can add more file-browser-tabs (for different projects maybe), or the one with which you can create new files and folders on the server. Plus sign will expand a subfolder while clicking on a file will attempt to open it in a code editor tab within the current window. 
 
-Feel free to explore other buttons as well. You can open current file in a new tab, or fold the code to make it more easily readable.
+Feel free to explore other buttons as well. You can open current file in a new tab, or fold the code to make it more easily readable. There are also some keyboard shortcuts hidden throughout the app. The most usefull of them all is probably **Ctrl+S** which will Save the current file, and standard copypasting shortcuts should also work. You can find more by hovering over buttons - if there is a shortcut for it, it will most likely be shown there.
 
 Syntax highlighting is automatic based on file extension, but can also be changed manually. When a file is changed, the tab text is colored red until the file is saved. A backup of file is created in the editor's backup folder on each save, for just in case. I've thought about eventually using it as a simple versioning tool, but we will see what the future brings. It's just a safety measure at the moment and files can be safely deleted if no longer required.
 
