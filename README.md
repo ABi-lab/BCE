@@ -40,7 +40,12 @@ That being said, I've thought (but not yet done much else) about implementing th
 # Other notes
 - I've never used this editor on anything other than Unicode (UTF) encoded files. If you create a new file from the editor, the appropriate encoding will be used. If you encounter any problems with other files, change encoding to UTF.
 - I like dark mode. I like it so much that at some point I've made the whole editor dark, which interfeers with light editor themes. This is a known bug, but I don't use light mode enough to care. Maybe later, or maybe someone else will make it work.
--
+- During the development this was hosted at shared hosting site on a server shared with many other clients. It was regularly updated with the latest security features, some of which work against the functionalities of this application, like exposing access to arbitrary files on server or transferring full paths and any file content, including unsafe content as a feature. For this reason, some work-arounds have been implemented, like changing '.' and '/' symbols with others, and Base64 encoding/decoding content (even twice! and then slightly un/scrambling even that!) before transfer. This is **JUST a TEXT editor**.
+
+# Again
+**- BE WARNED THAT THIS CODE, particularly index.php file, pose a SERIOUS SECURITY RISK and may expose unintended/unknown/undesired contents of the server to the user.**
+**- MAKE SURE TO APPLY APPROPRIATE PROTECTION, like using .htaccess with .htpasswd on Apache server to limit access to only certain users, or IP addresses, or other similar rules on other web servers.**
+**- KNOW WHICH FILES YOU ARE EXPOSING AND WHOM YOU ARE EXPOSING IT TO. Any path the web server can access via relative path of dots and slashes can be served to any authenticated user. _Make sure you don't provide anonymous public access to everything by mistake or ignorance._**
 
 # Included libraries
 No, I could not have done all this all by myself. I stand on the shoulders of the following giants (find them in code for more info, like versions and such):
