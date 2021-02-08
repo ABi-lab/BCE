@@ -7,7 +7,9 @@ It uses ACE editor for editing content of files, combined with custom PHP API fo
 
 It should be usefull to edit all kinds of source code files with syntax highlighting and auto-completion across different languages without the need to use FTP or FTP-based native running editors or such.
 
-It was developed while being used to work on code for HTML, CSS, JavaScript, PHP, C# and SQL.
+This means you can also use it to develop most of the web applications from anywhere within the browser in your favorite tablet or even mobile phone, such as Android or iThing.
+
+It was developed while being used to work on code for HTML, CSS, JavaScript, PHP, SQL and some C#.
 
 # How to use
 Just copy the whole contents of this directory to a folder accessible through HTTP via PHP-enabled web server and access it through the browser. 
