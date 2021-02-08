@@ -13,6 +13,8 @@ Just copy the whole contents of this directory to a folder accessible through HT
 
 **It is recommended that you somehow protect this folder from public access by any method available.** _I use .htaccess with .htpasswd on Apache._
 
+![Screenshot: main screen with two file browser tabs and three file tabs open, one changed but not saved](/.github/screenshot.jpg)
+
 You will se a file browser tab on the left with the content of the editor's parent folder on the web server. If you hover over icons above and read what each one does, you will find the one whith which you can add more file-browser-tabs (for different projects maybe), or the one with which you can create new files and folders on the server. Plus sign will expand a subfolder while clicking on a file will attempt to open it in a code editor tab within the current window. 
 
 Feel free to explore other buttons as well. You can open current file in a new tab, or fold the code to make it more easily readable.
