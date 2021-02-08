@@ -59,7 +59,8 @@ No, I could not have done all this all by myself. I stand on the shoulders of th
 
 # Project structure
 - **index.php** (main API/PHP code file for serving and saving content)
-- **app/app.php** (HTML and UI)
+- **app** (the rest of the application code)
+- **---/app.php** (HTML and UI)
 - **---/app.js** (JavaScript)
 - **---/app.css** (CSS)
 - **backups** (folder for saving backup files)
