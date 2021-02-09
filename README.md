@@ -58,20 +58,20 @@ No, I could not have done all this all by myself. I stand on the shoulders of th
 - ACE editor
 
 # Project structure
-- +- **index.php** (main API/PHP code file for serving and saving content)
-- +- **app** (the rest of the application code)
-- | +- **app.php** (all the app HTML and UI)
-- | +- **app.js** (all the app JavaScript)
-- | +- **app.css** (all the app CSS)
-- +- **backups** (folder for saving backup files)
-- +- **lib** (the shoulders of the giants, third party code)
--  +- **ace** (ACE editor)
--  +- **fonts** (FontAwesome, Bootstrap)
--  +- **js** (RequireJS, jQuery, jQueryUI, Bootstrap)
--  +- **css** (jQueryUI, Bootstrap, FontAwesome)
+- **index.php** (main API/PHP code file for serving and saving content)
+- **app** (the rest of the application code)
+- **--- app.php** (all the app HTML and UI)
+- **--- app.js** (all the app JavaScript)
+- **--- app.css** (all the app CSS)
+- **backups** (folder for saving backup files)
+- **lib** (the shoulders of the giants, third party code)
+- **--- ace** (ACE editor)
+- **--- fonts** (FontAwesome, Bootstrap)
+- **--- js** (RequireJS, jQuery, jQueryUI, Bootstrap)
+- **--- css** (jQueryUI, Bootstrap, FontAwesome)
 
 # Disclaimer
 If there is anything or anyone I forgot to do or mention, let me know.
 
 # Contact
-I can be contacted via email at info at abilab dot net or via [contact form at this website](https://abilab.net).
+I can be contacted via email at info at abilab dot net or via [contact form at this website](https://ABilab.net).
