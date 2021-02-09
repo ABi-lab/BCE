@@ -43,13 +43,13 @@ That being said, I've thought (but not yet done much else) about implementing th
 - I like dark mode. I like it so much that at some point I've made the whole editor dark, which interfeers with light editor themes. This is a known bug, but I don't use light mode enough to care. Maybe later, or maybe someone else will make it work.
 - During the development this was hosted at shared hosting site on a server shared with many other clients. It was regularly updated with the latest security features, some of which work against the functionalities of this application, like exposing access to arbitrary files on server or transferring full paths and any file content, including unsafe content as a feature. For this reason, some work-arounds have been implemented, like changing '.' and '/' symbols with others, and Base64 encoding/decoding content (even twice! and then slightly un/scrambling even that!) before transfer. This is **JUST a TEXT editor**. As such it does not work with binary file types at the moment, but this does not mean binary transfers can't be implemented for particular cases at some point in the future.
 
-# Again
-**- BE WARNED THAT THIS CODE, particularly index.php file, pose a SERIOUS SECURITY RISK and may expose unintended/unknown/undesired contents of the server to the user.**
-**- MAKE SURE TO APPLY APPROPRIATE PROTECTION, like using .htaccess with .htpasswd on Apache server to limit access to only certain users, or IP addresses, or other similar rules on other web servers.**
-**- KNOW WHICH FILES YOU ARE EXPOSING AND WHOM YOU ARE EXPOSING IT TO. Any path the web server can access via relative path of dots and slashes can be served to any authenticated user. _Make sure you don't provide anonymous public access to everything by mistake or ignorance._**
+# Again, for never enoughth time
+- **BE WARNED THAT THIS CODE, particularly index.php file, pose a SERIOUS SECURITY RISK and may expose unintended/unknown/undesired contents of the server to the user.**
+- **MAKE SURE TO APPLY APPROPRIATE PROTECTION, like using .htaccess with .htpasswd on Apache server to limit access to only certain users, or IP addresses, or other similar rules on other web servers.**
+- **KNOW WHICH FILES YOU ARE EXPOSING AND WHOM YOU ARE EXPOSING IT TO. Any path the web server can access via relative path of dots and slashes can be served to any authenticated user. _Make sure you don't provide anonymous public access to everything by mistake or ignorance._**
 
 # Included libraries
-No, I could not have done all this all by myself. I stand on the shoulders of the following giants (find them in code for more info, like versions and such):
+No, I could not have done all this all by myself. I stand on the shoulders of the following giants (find them in code for more info, like versions and licenses and such):
 - jQuery
 - jQuery UI
 - Require.JS
@@ -58,20 +58,20 @@ No, I could not have done all this all by myself. I stand on the shoulders of th
 - ACE editor
 
 # Project structure
-- **index.php** (main API/PHP code file for serving and saving content)
-- **app** (the rest of the application code)
-- **---/app.php** (HTML and UI)
-- **---/app.js** (JavaScript)
-- **---/app.css** (CSS)
-- **backups** (folder for saving backup files)
-- **lib** (the shoulders of the giants, third party code)
-- **---/ace** (ACE editor)
-- **---/fonts** (FontAwesome, bootstrap)
-- **---/js** (RequireJS, jQuery, jQueryUI, Bootstrap)
-- **---/css** (jQueryUI, Bootstrap, FontAwesome)
+- +- **index.php** (main API/PHP code file for serving and saving content)
+- +- **app** (the rest of the application code)
+- | +- **app.php** (all the app HTML and UI)
+- | +- **app.js** (all the app JavaScript)
+- | +- **app.css** (all the app CSS)
+- +- **backups** (folder for saving backup files)
+- +- **lib** (the shoulders of the giants, third party code)
+-  +- **ace** (ACE editor)
+-  +- **fonts** (FontAwesome, Bootstrap)
+-  +- **js** (RequireJS, jQuery, jQueryUI, Bootstrap)
+-  +- **css** (jQueryUI, Bootstrap, FontAwesome)
 
 # Disclaimer
 If there is anything or anyone I forgot to do or mention, let me know.
 
 # Contact
-I can be contacted via email at [info at abilab dot net] or via [contact form at this website](https://abilab.net).
+I can be contacted via email at info at abilab dot net or via [contact form at this website](https://abilab.net).
